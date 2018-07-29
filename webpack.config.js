@@ -29,6 +29,20 @@ module.exports = {
         use: [
           'file-loader'
         ]
+      },
+      {
+        // Loading CSV data using csv-loader
+        test: /\.(csv|tsv)$/,
+        use: [
+          'csv-loader'
+        ]
+      },
+      {
+        // Loading XML data using xml-loader
+        test: /\.xml$/,
+        use: [
+          'xml-loader'
+        ]
       }
     ]
   }
